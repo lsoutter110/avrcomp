@@ -6,7 +6,7 @@ I reccomend you add avrcomp to the system path so it can be run anywhere.
 ```avrcomp filename [options]```
 
 ### Options
-```-p [compilation processor] [upload processor]```
+`-p [compilation processor] [upload processor]`
 ```-c [programmer]```
 ```-f [frequency]```
 ```-l [filename list]```
