@@ -131,7 +131,7 @@ pub fn run(config: Config) -> Result<(), &'static str> {
 		println!("{}", String::from_utf8_lossy(&output.stderr));
 		return Err("failed to compile!");
 	}
-	println!("[avr-gcc] -> {} compiled!", config.file_path);
+	println!("[avr-gcc] -> {}.c compiled!", config.file_path);
 
 	//avr-objcopy -O ihex prog.elf prog.hex
 	let output = Command::new("avr-objcopy")
