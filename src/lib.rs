@@ -19,37 +19,6 @@ impl Config {
             None => return Err("no file path argument"),
         };
 
-
-      	/*
-      	let mut opt = String::new();
-        while match args.next() {Some(arg) => {opt=arg; true}, None => false} {
-        	match opt.as_str() {
-        		"-p" => {
-        			comp_proc = match args.next() {
-        				Some(arg) => arg,
-        				None => return Err("-p expects [compilation processor] [upload processor]"),
-        			};
-        			upl_proc = match args.next() {
-        				Some(arg) => arg,
-        				None => return Err("-p expects [compilation processor] [upload processor]"),
-        			};
-        		},
-        		"-c" => {
-        			prog = match args.next() {
-        				Some(arg) => arg,
-        				None => return Err("-c expects [programmer]"),
-        			};
-        		},
-        		"-f" => {
-        			freq = match args.next() {
-        				Some(arg) => arg,
-        				None => return Err("-f expects [frequency]"),
-        			};
-        		},
-        		_ => return Err("unexpected argument"),
-        	}
-        }*/
-
         let mut opt_map = HashMap::new();
         let mut curr_opt = String::new();
         let mut curr_vals = Vec::new();
