@@ -17,4 +17,4 @@ I reccomend you add avrcomp to the system path so it can be run anywhere.
 
 
 ### Example
-`avrcomp mpu6050 -l uart_wrapper twi_wrapper`
+`avrcomp mpu6050 -l lcd_hl.a`
